@@ -1,0 +1,85 @@
+.section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 100vh;
+}
+.skills{
+    width: 75%;
+    display: flex;
+    flex-direction:column;
+    justify-content: space-evenly;
+    row-gap: 35px;
+    position: absolute;
+
+}
+.header{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1px;
+    letter-spacing: 3px;
+}
+.skills-row {
+    display: flex;
+    gap: 40px;
+  }
+  .skill {
+    flex: 1;
+  }
+  .skill-title {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #222;
+  }
+  .progress-custom {
+    background: #f0f2f8;
+    border-radius: 6px;
+    height: 7px;
+    position: relative;
+    width: 100%;
+  }
+  .progress-bar-custom {
+    height: 7px;
+    border-radius: 6px;
+    position: relative;
+  }
+  .progress-bar-custom .progress-percent {
+    position: absolute;
+    top: -28px;
+    right: 0;
+    font-size: 15px;
+    font-weight: 600;
+  }
+  .progress-bar-custom::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: inherit;
+    z-index: 2;
+  }
+
+  .progress-bar-custom.photoshop{
+     background: #42a5f5; color: #42a5f5; 
+    }
+.progress-bar-custom.jquery{
+     background: #ef5350; color: #ef5350;
+     }
+.progress-bar-custom.html5{
+     background: #ffca28; color: #ffca28; 
+    }
+.progress-bar-custom.css3{ 
+    background: #ab47bc; color: #ab47bc; 
+}
+.progress-bar-custom.wordpress{
+     background: #26a69a; color: #26a69a; 
+    }
+.progress-bar-custom.seo{ 
+    background: #3949ab; color: #3949ab; 
+}

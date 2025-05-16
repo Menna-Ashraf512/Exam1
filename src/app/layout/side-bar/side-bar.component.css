@@ -1,0 +1,74 @@
+.sidebar {
+  width: 250px;
+  height: 100vh;
+  background-color: #f5f5f5;
+  padding-block: 30px;
+  text-align: center;
+  box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+}
+.sidebar_content{
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  align-items: center;
+  padding-block: 20px;
+}
+.profile-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+h2 {
+  font-size: 22px;
+  margin: 0;
+  font-weight: 700;
+  font-family: "Playfair Display", serif;
+}
+
+.subtitle {
+  color: #777;
+  font-size: 12px;
+  margin-top: 10px;
+  font-weight: 400;
+}
+
+.nav-links a {
+  display: block;
+  color: #000000;
+  text-decoration: none;
+  letter-spacing: 1px;
+  margin: 15px 0;
+  font-size: 12px;
+  font-weight:500;
+}
+.nav-links span{
+  position: relative;
+}
+
+.nav-links a span::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -6px;
+  transform: translateX(-50%);
+  width: 0;
+  height: 1px;
+  background-color: #007bff;
+  transition: width 0.3s ease;
+}
+.nav-links a:hover span::after{
+  width: 100%;
+}
+.bar_btn {
+  position: fixed;     
+  top: 20px;            
+  left: 20px;           
+  z-index: 50;
+  background-color: rgba(128, 128, 128, 0.332);
+  color: black;
+  border: 1 solid gray;
+  padding: 10px 15px;
+  border-radius: 5px;
+}

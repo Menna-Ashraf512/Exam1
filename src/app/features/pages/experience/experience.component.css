@@ -1,0 +1,118 @@
+.experience-section {
+  margin: 60px auto;
+  width: 60%;
+  font-family: 'Poppins', Arial, sans-serif;
+}
+.experience-header {
+  margin-bottom: 30px;
+}
+.experience-label {
+  letter-spacing: 4px;
+  color: #bdbdbd;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.experience-title {
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin: 0 0 10px 0;
+}
+.timeline {
+  position: relative;
+  margin-left: 30px;
+  padding-left: 30px;
+  padding-block: 40px;
+}
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 30px;
+  top: 0;
+  width: 4px;
+  height: 100%;
+  background: #eaeaea;
+  border-radius: 2px;
+}
+.timeline-item {
+  position: relative;
+  margin-bottom: 40px;
+ min-height: 200px; 
+}
+
+
+.timeline-item.end {
+  min-height: 0;
+  margin-bottom: 0;
+}
+.timeline-icon {
+  position: absolute;
+  left: -30px;
+  top: 0;
+  width: 60px;
+  height: 60px;
+  background: #fff;
+  border-radius: 50%;
+  border: 7px solid #eaeaea;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  z-index: 2;
+}
+.timeline-icon.blue {
+  background: #42a5f5;
+  color: #fff;
+}
+.timeline-icon.red {
+  background: #ef5350;
+  color: #fff;
+}
+.timeline-icon.yellow {
+  background: #ffca28;
+  color: #fff;
+}
+.timeline-content {
+  background: #F2F3F7;
+  border-radius: 4px;
+  padding-inline: 20px;
+  padding-block:40px;
+  margin-left: 50px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+}
+.timeline-content::before{
+  content: '';
+  position: absolute;
+  top: 20px;
+  left:30px;
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 20px solid #F2F3F7;
+}
+
+.timeline-content h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0 0 8px 0;
+  color: #222;
+}
+.timeline-content h3 span {
+  color: #bdbdbd;
+  font-size: 15px;
+  font-weight: 400;
+  margin-left: 10px;
+}
+.timeline-content p {
+  color: #6d6d6d;
+  font-size: 15px;
+  margin: 0;
+  line-height: 30px;
+}
+@media (max-width: 768px) {
+  .experience-section { max-width: 98vw; }
+  .timeline-content { padding: 18px 10px 14px 18px; }
+  .timeline { padding-left: 18px; }
+}

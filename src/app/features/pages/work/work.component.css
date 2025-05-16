@@ -1,0 +1,32 @@
+.work-section {
+  margin: 60px auto;
+  width: 70%;
+  font-family: 'Poppins', Arial, sans-serif;
+}
+.work-header {
+  margin-bottom: 30px;
+  & .work_label{
+    font-size: 10px;
+    font-weight: 500;
+    color: #9999;
+    letter-spacing: 2px;
+  }
+  & .work_title{
+    font-weight: 700;
+    font-size: 20px;
+    font-family: "Playfair Display", serif;
+    letter-spacing: 3px;
+    margin-block: 20px;
+
+  }
+}
+.tabs{
+    display: flex;
+    column-gap: 30px;
+    padding: 0;
+    list-style:none;
+    & li a{
+        text-decoration: none;
+        color: #000;
+    }
+}
