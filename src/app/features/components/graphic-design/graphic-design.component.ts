@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./graphic-design.component.css']
 })
 export class GraphicDesignComponent {
-
+showMore=false
 }

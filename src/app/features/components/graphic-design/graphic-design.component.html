@@ -79,7 +79,7 @@
         </div>
 
     </div>
-    <div class="col-md-6 mb-4">
+    <div class="col-md-6 mb-4" *ngIf="showMore">
         <div class="image-wrapper position-relative">
             <img src="/assets/images/img-5-lAucr__a.jpg" alt="work" class="img-fluid h-100 w-100 object-fit-cover">
             <div class="overlay d-flex">
@@ -99,7 +99,7 @@
         </div>
 
     </div>
-    <div class="col-md-6 mb-4">
+    <div class="col-md-6 mb-4" *ngIf="showMore">
         <div class="image-wrapper position-relative">
             <img src="/assets/images/img-6-DFW03AZ3.jpg" alt="work" class="img-fluid h-100 w-100 object-fit-cover">
             <div class="overlay d-flex">
@@ -117,5 +117,8 @@
                 </div>
             </div>
         </div>
+    </div>
+        <div class="text-start mt-3" *ngIf="!showMore">
+      <button class="btn btn-primary" (click)="showMore = true">Show more</button>
     </div>
 </div>
