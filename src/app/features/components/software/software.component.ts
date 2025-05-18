@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./software.component.css']
 })
 export class SoftwareComponent {
+showMore=false
 
 }

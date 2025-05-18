@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./apps.component.css']
 })
 export class AppsComponent {
+showMore=false
 
 }
